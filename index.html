@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Todo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fetch Todos</h1>
+        <div class="input-group">
+            <input type="text" id="rangeId" placeholder="Enter ID range (e.g., 1-5)">
+            <button onclick="fetchTodos()">Fetch</button>
+        </div>
+
+        <table id="todoTable" style="display: none;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Title</th>
+                    <th>Completed</th>
+                </tr>
+            </thead>
+            <tbody id="todoRows">
+             
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
